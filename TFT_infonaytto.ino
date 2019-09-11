@@ -1,6 +1,6 @@
 /*
   #########################################################################
-  ###### DON'T FORGET TO UPDATE THE User_Setup.h FILE IN THE LIBRARY ######
+  ###### Muuta TFT_eSPI:n User_Setup.h:ssa Setup1_ILI9341.h käyttöön ######
   #########################################################################
 */
 
@@ -284,7 +284,7 @@ void loop() {
     tft.setTextColor(TFT_YELLOW);
     tft.setCursor(20, 190);
     tft.setTextFont(2); tft.setTextSize(2);
-    tft.println("Avoinna arkisin 9-16");
+    tft.println("Avoinna sovittaessa");
     display.setSegments(SEG_CLOSED);
     int pos = beatsin8(80, 8, 255, 0, 0);
     fill_solid( leds, NUM_LEDS, CRGB(pos, 0, 0));
@@ -362,7 +362,7 @@ void loop() {
     tft.setCursor(70, 180);
     tft.println("Kiirellisessa tapauksessa");
     tft.setCursor(52, 195);
-    tft.println("soita numeroon: 0401842078");
+    tft.println("soita numeroon: 0440 242895");
     display.setSegments(SEG_IN99);
     int pos = beatsin8(80, 8, 255, 0, 0);
     fill_solid( leds, NUM_LEDS, CRGB(pos, 0, 0));
@@ -382,7 +382,8 @@ void loop() {
     tft.setTextColor(TFT_YELLOW);
     tft.setCursor(55, 200);
     tft.setTextFont(2); tft.setTextSize(1);
-    tft.println("Normaalisti avoinna Ma-Pe 9-16");
+ //   tft.println("Normaalisti avoinna Ma-Pe 9-16");
+    tft.println("Avoinna sovittaessa");
     display.setSegments(SEG_SULJ);
     int pos = beatsin8(80, 8, 255, 0, 0);
     fill_solid( leds, NUM_LEDS, CRGB(pos, 0, pos));
